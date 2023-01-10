@@ -1,0 +1,693 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --backgroundcolor: #ececec;
+  --darkgreyting: #808080;
+  --littlelighter: #cccccc;
+  --redd: #a70000;
+  --greeen: #009900;
+  --white: #ffffff;
+}
+
+body {
+  background: var(--backgroundcolor);
+  font-family: "Be Vietnam Pro", sans-serif;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+body nav {
+  background: var(--white);
+  padding: 25px;
+  position: -webkit-sticky;
+  position: sticky;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+body nav .toppers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body nav .toppers .logo p {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+body nav .toppers .logo p a {
+  text-decoration: none;
+  letter-spacing: -1px;
+  color: var(--greeen);
+}
+
+body nav .toppers .logo p a span {
+  color: var(--darkgreyting);
+}
+
+body nav .toppers .switch {
+  cursor: pointer;
+}
+
+body nav .toppers .switch .outer {
+  background: var(--littlelighter);
+  width: 60px;
+  height: 30px;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+body nav .toppers .switch .outer .inner {
+  background: var(--darkgreyting);
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  margin-left: 3px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+body nav .toppers .switch .outer .move {
+  -webkit-transform: translateX(28px);
+          transform: translateX(28px);
+}
+
+body nav .toppers .switch .outer:hover .inner {
+  background: var(--greeen);
+}
+
+body .receipt-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-y: auto;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+body .mylist {
+  width: 80%;
+  margin: auto;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  color: var(--darkgreyting);
+  font-size: 13px;
+  position: relative;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+body .mylist .head {
+  text-transform: uppercase;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  color: var(--greeen);
+  font-size: 11px;
+  margin-bottom: 20px;
+}
+
+body .mylist p {
+  font-weight: 300;
+  color: var(--darkgreyting);
+  text-align: center;
+  margin-top: 72px;
+}
+
+body .mylist ul {
+  height: 63vh;
+  list-style: none;
+  overflow: auto;
+}
+
+body .mylist ul li {
+  background: var(--white);
+  padding: 15px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .mylist ul li ion-icon {
+  color: var(--littlelighter);
+  font-size: 25px;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+body .mylist ul li:hover {
+  background: var(--littlelighter);
+}
+
+body .mylist ul li:hover ion-icon {
+  color: var(--darkgreyting);
+  font-size: 25px;
+}
+
+body .mylist .new-receipt {
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+  background: var(--greeen);
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 900;
+  letter-spacing: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  position: absolute;
+  width: 100%;
+  margin-top: 40px;
+}
+
+body .mylist .new-receipt:hover {
+  opacity: 80%;
+}
+
+body .user-info {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .user-info .back-arrow {
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: var(--darkgreyting);
+  font-weight: 500;
+  letter-spacing: 5px;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 5px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+body .user-info .userinputs {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .user-info .contents {
+  margin-top: 80px;
+}
+
+body .user-info .contents div {
+  padding: 10px;
+  position: relative;
+}
+
+body .user-info .contents div .profile {
+  background: var(--darkgreyting);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10000;
+}
+
+body .user-info .contents div .profile ion-icon {
+  color: var(--white);
+  font-size: 25px;
+}
+
+body .user-info .contents div .input-field {
+  background: var(--white);
+  height: 50px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .user-info .contents div .input-field input {
+  font-family: "Be Vietnam Pro", sans-serif;
+  margin-left: 40px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  color: var(--darkgreyting);
+  background: transparent;
+}
+
+body .user-info .contents div .input-field input:focus {
+  background: none;
+}
+
+body .user-info .contents div .input-field input[type="date"]::-webkit-inner-spin-button,
+body .user-info .contents div .input-field input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+body .user-info .add-cus {
+  background: var(--greeen);
+  padding: 15px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 900;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 3px;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  margin-bottom: 52px;
+}
+
+body .user-info .add-cus:hover {
+  opacity: 80%;
+}
+
+body .receipt-section {
+  padding: 20px 30px;
+}
+
+body .receipt-section .back-arrow {
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: var(--darkgreyting);
+  font-weight: 500;
+  letter-spacing: 5px;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 5px;
+  font-size: 10px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+body .receipt-section .reci {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: var(--darkgreyting);
+  padding: 15px;
+  gap: 10px;
+  color: var(--white);
+  border-radius: 5px;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+body .receipt-section .reci .recipi {
+  letter-spacing: 1px;
+}
+
+body .receipt-section .service {
+  padding: 15px;
+  background: var(--white);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+body .receipt-section .service input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: var(--darkgreyting);
+  background: transparent;
+}
+
+body .receipt-section .amount {
+  padding: 15px;
+  background: var(--white);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+body .receipt-section .amount input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: var(--darkgreyting);
+  background: transparent;
+}
+
+body .receipt-section .amount input::-webkit-outer-spin-button,
+body .receipt-section .amount input::-webkit-inner-spin-button {
+  /* -webkit-appearance: none; */
+  margin-right: 10px;
+  /* background-color: purple; */
+  cursor: pointer;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  opacity: 20%;
+  margin-right: -10px;
+}
+
+body .receipt-section .adds {
+  padding: 15px;
+  background: var(--greeen);
+  border-radius: 5px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 2px;
+  color: white;
+  margin-bottom: 15px;
+  width: 100%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+body .receipt-section .adds:hover {
+  opacity: 80%;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+body .receipt-ui {
+  background: var(--white);
+  padding: 30px 20px;
+  width: 85%;
+  margin: auto;
+  border-radius: 5px;
+  font-size: 11px;
+  color: var(--darkgreyting);
+}
+
+body .receipt-ui .topbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--littlelighter);
+  margin-bottom: 30px;
+}
+
+body .receipt-ui .topbar .rh {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+body .receipt-ui .topbar .rh p {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+body .receipt-ui .topbar .rh .currentdate {
+  display: block;
+}
+
+body .receipt-ui .topbar .lh {
+  font-weight: 900;
+  text-align: right;
+  line-height: 20px;
+}
+
+body .receipt-ui .topbar .lh p {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+body .receipt-ui .topbar .lh .nos {
+  display: inline;
+}
+
+body .receipt-body ul {
+  list-style: number;
+  margin-bottom: 30px;
+}
+
+body .receipt-body ul li {
+  background: var(--white);
+  padding: 10px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 40px;
+  cursor: pointer;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+  overflow: hidden;
+}
+
+body .receipt-body ul li .righ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+body .receipt-body ul li .righ .pric {
+  margin-right: 7px;
+}
+
+body .receipt-body ul li .righ .btns {
+  margin-right: -15px;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+body .receipt-body ul li .righ button {
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 3px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+body .receipt-body ul li .righ ion-icon {
+  color: var(--darkgreyting);
+  font-size: 20px;
+  --ionicon-stroke-width: 40px;
+}
+
+body .receipt-body ul li .righ .myedit:hover {
+  color: #009900;
+}
+
+body .receipt-body ul li .righ .mydelete:hover {
+  color: #a70000;
+}
+
+body .receipt-body ul li .righ .edit {
+  background: none;
+  margin-bottom: 3px;
+}
+
+body .receipt-body ul li .righ .delete {
+  margin-top: 2px;
+  background: none;
+}
+
+body .receipt-body ul li:hover {
+  background: var(--littlelighter);
+}
+
+body .receipt-body ul li:hover .btns {
+  display: block;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+body .receipt-body ul li:hover .righ {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+body .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: var(--redd);
+  color: white;
+  padding: 12px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.download {
+  background: var(--darkgreyting);
+  padding: 15px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.download:hover {
+  opacity: 80%;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+.no-display {
+  display: none !important;
+}
+
+.no-pointer-event {
+  pointer-events: none;
+  opacity: 50%;
+}
+
+.success {
+  position: fixed;
+  background: var(--greeen);
+  top: 550px;
+  left: 100px;
+  width: 200px;
+  height: 30px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
+}
+
+.back {
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+}
+/*# sourceMappingURL=main.css.map */

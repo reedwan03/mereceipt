@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./main.css">
+    <title>meReceipt</title>
+</head>
+
+<body>
+    <nav>
+        <div class="toppers">
+            <div class="logo">
+
+                <p class="loggo"><a href="#">me<span>Receipt</span></a></p>
+            </div>
+            <div class="switch">
+                <div class="outer">
+                    <div class="inner"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="receipt-content">
+
+
+        <section class="mylist no-display">
+
+
+            <div class="head">
+                Your Receipts
+            </div>
+            <div class="msg">
+
+                <p class="blank-rec">Sorry 🙂, <br>
+                    you have no receipt yet. <br> Click below to Start!!!</p>
+            </div>
+            <ul class="receipt-list">
+                <!-- <li>
+                    <div class="item">
+                        TO: <span>Mrs Anifowose</span>
+                    </div>
+                    <div class="delete">
+                        <ion-icon name="close-circle-outline" class="mydelete"></ion-icon>
+                    </div>
+
+                </li> -->
+
+
+
+            </ul>
+
+            <div class="new-receipt">
+                CREATE NEW RECEIPT
+            </div>
+
+
+        </section>
+
+
+        <section class="user-info no-display">
+
+            <div class="back-arrow">
+                < BACK </div>
+
+
+                    <form class="userinputs">
+
+                        <div class="contents">
+                            <div>
+                                <div class="profile">
+                                    <ion-icon name="person-sharp"></ion-icon>
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" name="" id="c-name" placeholder="Add Name">
+                                </div>
+                            </div>
+                            <div>
+
+                                <div class="profile">
+                                    <ion-icon name="calendar"></ion-icon>
+                                </div>
+                                <div class="input-field">
+                                    <input type="date" name="" id="mydate">
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <button class="add-cus">
+                            ADD CUSTOMER
+                        </button>
+                    </form>
+
+        </section>
+
+        <div class="formContainer no-display">
+
+            <section class="receipt-section " id="receipt">
+                <div class="reci">
+                    <div class="to">
+                        TO:
+                    </div>
+                    <div class="name">
+                        <!-- <p class="recipi">Mrs Adetokunbo</p> -->
+                    </div>
+                </div>
+                <form class="service-form">
+                    <div class="service">
+                        <input type="text" placeholder="Enter Service" class="service-input">
+                    </div>
+                    <div class="amount">
+                        <input type="number" name="" id="" placeholder="Enter Amount" class="amount-input">
+                    </div>
+                    <button class="adds">
+                        ADD ITEM
+                    </button>
+
+                </form>
+            </section>
+            <section class="receipt-ui">
+                <div class="receipt-all">
+
+
+                    <div class="topbar">
+                        <div class="rh">
+                            Date
+                            <!-- <p class="currentdate">12-05-2022</p> -->
+                        </div>
+
+                        <div class="lh">
+                            Inv number
+                            <!-- <p>#INV
+                                <span class="nos">001</span>
+                            </p> -->
+                        </div>
+                    </div>
+
+                    <div class="receipt-body">
+                        <ul class="iteming">
+
+                            <!-- <li class="new-list"> -->
+                            <!-- <div class="left">
+                                    <p class="dv">Red Tomatoes</p>
+                                </div>
+                                <div class="righ">
+                                    <div class="pric">
+                                        <p class="pc">5000</p>
+                                    </div>
+            
+                                    <div class="btns">
+                                        <button class="edit">
+                                            <ion-icon name="create-outline" class="myedit"></ion-icon>
+                                        </button>
+                                        <button class="delete">
+            
+                                            <ion-icon name="close-circle-outline" class="mydelete"></ion-icon>
+                                        </button>
+                                    </div>
+            
+            
+                                </div> -->
+                            <!-- </li> -->
+
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="total">
+                    <div class="text">
+                        TOTAL
+                    </div>
+                    <div class="amount">
+                        $<span class="number">0.00</span>
+                    </div>
+                </div>
+
+
+            </section>
+            <div class="download" id="download-btn">
+                DOWNLOAD
+            </div>
+
+        </div>
+    </div>
+    <div id=”editor”></div>
+    
+    
+    <!-- <div class="success">
+        DOWNLOAD SUCCESSFUL
+    </div> -->
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+        integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script src="./script.js"></script>
+    <!-- <script> console.log(jsPDF)</script> -->
+
+
+</body>
+
+</html>

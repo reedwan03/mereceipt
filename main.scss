@@ -90,7 +90,7 @@ body {
   .receipt-content {
     // height: 100%;
     flex: 1;
-    overflow-y: auto;
+
     transition: all ease-in 0.2s;
   }
 
@@ -121,7 +121,7 @@ body {
     }
 
     ul {
-      height: 63vh;
+      height: 50vh;
       list-style: none;
       overflow: auto;
 
@@ -170,7 +170,7 @@ body {
       // transform: translateY(50vh);
       position: absolute;
       width: 100%;
-      margin-top: 40px;
+      // margin-top: 40px;
     }
 
     .new-receipt:hover {

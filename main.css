@@ -111,7 +111,6 @@ body .receipt-content {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  overflow-y: auto;
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
 }
@@ -145,7 +144,7 @@ body .mylist p {
 }
 
 body .mylist ul {
-  height: 63vh;
+  height: 50vh;
   list-style: none;
   overflow: auto;
 }
@@ -207,7 +206,6 @@ body .mylist .new-receipt {
   transition: all ease-in-out 0.2s;
   position: absolute;
   width: 100%;
-  margin-top: 40px;
 }
 
 body .mylist .new-receipt:hover {
